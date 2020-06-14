@@ -1,0 +1,31 @@
+{
+  "name": "homeworkw16",
+  "version": "1.0.0",
+  "description": "Update Profile Page",
+  "main": "server.js",
+  "scripts": {
+    "build": "postcss public/css/tailwind.css -o public/build/tailwind.css",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuku72/homeworkw16.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryuku72/homeworkw16/issues"
+  },
+  "homepage": "https://github.com/Ryuku72/homeworkw16#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "passport": "^0.4.1",
+    "postcss-cli": "^7.1.1",
+    "sequelize": "^5.21.12",
+    "tailwindcss": "^1.4.6"
+  }
+}
