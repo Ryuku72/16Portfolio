@@ -18,6 +18,8 @@ $(document).ready(function () {
 //         showSlides()
 
     $(".prjBox").on("click", function(){
+        $(".wkTtl").removeClass("hide");
+        $(".prjInfo").addClass("hide");
         $(this).children(".wkTtl").toggleClass("hide");
         $(this).children(".prjInfo").toggleClass("hide");
     })
