@@ -1,152 +1,90 @@
-/* Slideshow container */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  -ms-overflow-style: none;
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera
-body::-webkit-scrollbar {
-  display: none;
-} */
-
 #navbar {
-  position: sticky; /* Sticky/fixed navbar */
-  top: 0; /* At the top */
-  overflow: hidden;
-  background-color: black;
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  z-index: 20;
-  line-height: 150px;
+  transition: all 1s ease-out;
 }
 
-.scrollNav {
-  padding: 30px 30px;
-  height: 60px !important;
-  line-height: 60px !important;
-  -webkit-transition: height .5s, line-height .5s;
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
-  transition: height .5s, line-height .5s;
+#buttonSeq {
+  transition: all 0.5s ease-out;
 }
 
-.slideshow-container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
 
-/* Text */
-.slideText {
+.preNavHeader {
   position: absolute;
-  top: 0;
-  right: 3.25em;
-  z-index: 8;
-  line-height: 0.15em;
-  text-align: end;
-  margin: 0em;
-}
-
-.titleText {
-  font-family: 'Permanent Marker', cursive;
-  color: white;
-  text-shadow: black 5px 5px;
-  z-index: 8;
-  flex-direction: column;
-}
-
-#hello {
-  font-size: 3.5em;
-  margin: 1.25em 0.75em;
-}
-
-#name1 {
-  font-size: 8.5em;
-  margin:0.65em 0em;
-}
-
-#name2 {
-  font-size: 8.5em;
-  margin: 0.85em 0em;
-}
-
-/* Title Buttons */
-.buttonSeq {
-  position: absolute;
-  bottom: 1%;
-  left: 5%;
-  z-index: 8;
-}
-
-.titleButton{
-  font-family: 'Permanent Marker', cursive;
-  font-size: 20%;
-  padding: 2rem;
-  color: white;
-  text-shadow: black 5px 5px;
-  background-color: transparent;
-  outline: none;
-  border: none;
+  bottom: 0; 
+  left: 0; 
+  padding-bottom: 2rem;
+  padding: 1rem;
+  display: flex; 
   flex-direction: row;
-  font-size: 1.7em;
+  font-size: 2.8em;
 }
 
-#project:hover {
-  color: rgb(255, 234, 75);
-}
-
-#project:hover a {
-  display: inline-block
-}
-
-#about:hover {
-  color: rgb(175, 255, 175);
-}
-
-#about:hover a {
-  display: inline-block
-}
-
-#contact:hover {
-  color: rgb(218, 140, 196);
-}
-
-#contact:hover a {
-  display: inline-block
-}
-
-/* SlideShow */
-.imageSlide {
-  width: 100%;
-  height: 100%;
-  display: block;
+.navHeader{
+  position: sticky;
+  display: inline-flex;
+  vertical-align: middle;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  margin-left: auto;
+  height: 2.5em;
+  background-color: rgb(45, 55, 72);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 92% 24%, 89% 77%, 82% 61%, 77% 100%, 0 100%);
+  font-size: 1.5em;
 }
 
-.titleSeq1,
-.titleSeq2,
-.titleSeq3,
-.titleSeq4,
-.titleSeq5 {
-  width: 100%;
-  height: 100%;
+#disclaimer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
 }
 
-.titleSeq1 {
+#disclaimer.active {
+  transform: translate(-50%, -50%);
+}
+
+#overlay {
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+  }
+  
+#overlay.active {
+  opacity: 0.8;
+  pointer-events: all;
+}
+
+.pMarker {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  text-shadow: black 5px 5px;
+  outline: none !important;
+}
+
+.animation {
   position: absolute;
-  z-index: 5;
-  background-color: rgb(57, 171, 57);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+
+.hide {
+  display: none;
+}
+
+button:hover a {
+  display: inline-flex;
+  animation: 0.8s;
+  animation-name: letters;
+}
+
+
+#titleSeq1 {
   animation: 5s green;
   animation-fill-mode: forwards;
   animation-delay: 1s;
@@ -154,10 +92,7 @@ body::-webkit-scrollbar {
   -webkit-clip-path: polygon(48% 100%, 100% 100%, 76% 100%, 64% 100%, 31% 100%, 19% 100%, 0 100%);
 }
 
-.titleSeq2 {
-  position: absolute;
-  z-index: 4;
-  background-color: orange;
+#titleSeq2 {
   animation: 4s orange;
   animation-fill-mode: forwards;
   animation-delay: 5s;
@@ -165,10 +100,7 @@ body::-webkit-scrollbar {
   -webkit-clip-path: polygon(48% 100%, 100% 100%, 76% 100%, 64% 100%, 31% 100%, 19% 100%, 0 100%);
 }
 
-.titleSeq3 {
-  position: absolute;
-  z-index: 3;
-  background-color: palevioletred;
+#titleSeq3 {
   animation: 8s pink;
   animation-fill-mode: forwards;
   animation-delay: 3s;
@@ -177,72 +109,63 @@ body::-webkit-scrollbar {
   animation-fill-mode: forwards;
 }
 
-.titleSeq4 {
-  position: absolute;
-  z-index: 2;
-  background-color: skyblue;
+#titleSeq4 {
   animation: 4s skyblue;
   animation-fill-mode: forwards;
   clip-path: polygon(48% 100%, 100% 100%, 76% 100%, 64% 100%, 31% 100%, 19% 100%, 0 100%);
   -webkit-clip-path: polygon(48% 100%, 100% 100%, 76% 100%, 64% 100%, 31% 100%, 19% 100%, 0 100%);
 }
 
-.titleSeq5 {
-  position: absolute;
-  z-index: 0;
-  background-color: black;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-
-/* Extra Elements */
-.moon {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
-  left: 0;
+#moon {
   background-color: rgb(215, 213, 169);
-  clip-path: circle(10% at 16% 26%);
-  -webkit-clip-path: circle(10% at 16% 26%);
+  clip-path: circle(12% at 16% 30%);
+  -webkit-clip-path: circle(12% at 16% 30%);
   opacity: 1;
   animation: 12s moon;
   animation-fill-mode: forwards;
 }
 
-.house {
-  z-index: 7;
-  position: absolute;
-  width: 4.2em;
-  height: 4.5em;
-  bottom: 4%;
-  right: 22%;
+#house {
+  width: 5.5em;
+  height: 5.5em;
   background-color: rgb(147, 88, 0);
   clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
   -webkit-clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
-  animation: house 14s forwards;
+  animation: house 10s, house-color 16s infinite;
   opacity: 1;
   border-bottom: rgb(18, 52, 18) double 0.3em;
 }
 
-.smoke {
-  z-index: 6;
-  position: absolute;
-  width: 6.5em;
-  height: 20em;
-  bottom: 15.5%;
-  right: 16.5%;
+#smoke {
+  width: 9em;
+  height: 30em;
   background-color: grey;
   clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
   -webkit-clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
-  animation: smoke 12s infinite;
-  animation-delay: 12s;
-  -webkit-animation-delay: 12s;
+  animation: smoke 16s infinite;
+  animation-delay: 7s;
+  -webkit-animation-delay: 7s;
   opacity: 0;
 }
 
 /* Keyframes  */
+@keyframes letters {
+  0% {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+
 @keyframes green {
   0% {
     clip-path: polygon(100% 100%, 80% 100%, 53% 100%, 38% 100%, 20% 100%, 0 100%);
@@ -363,12 +286,40 @@ body::-webkit-scrollbar {
   }
 }
 
+@keyframes house-color {
+  0% {
+    background-color: rgb(120, 79, 20);
+    width: 5.6em;
+    height: 5.5em;
+  }
+  20% {
+    background-color:rgb(85, 49, 15);
+    height: 5.8em;
+  }
+
+  50% {
+    background-color: rgb(121, 73, 2);;
+    width: 5.5em;
+    height: 5.3em;
+  }
+  80% {
+    background-color:rgb(85, 49, 15);
+    height: 5.8em
+  }
+
+  100% {
+    background-color: rgb(120, 79, 20);
+    width: 5.6em;
+    height: 5.5em;
+}
+}
+
 @keyframes smoke {
   0% {
     clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
-    opacity: 50%;
+    opacity: 35%;
     -webkit-clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
-    -webkit-filter: opacity(0.5);
+    -webkit-filter: opacity(0.2);
   }
 
   20% {
@@ -402,8 +353,8 @@ body::-webkit-scrollbar {
   100% {
     clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
     -webkit-clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
-    opacity: 50%;
-    -webkit-filter: opacity(0.5);
+    opacity: 35%;
+    -webkit-filter: opacity(0.2);
   }
 }
 
@@ -421,30 +372,9 @@ body::-webkit-scrollbar {
   }
 
   100% {
-    clip-path: circle(10% at 16% 26%);
-    -webkit-clip-path: circle(10% at 16% 26%);
+    clip-path: circle(12% at 16% 30%);
+    -webkit-clip-path: circle(12% at 16% 30);
     opacity: 1;
     -webkit-filter: opacity(1);
   }
 }
-
-
-/*media queries */
-@media screen and (max-width: 1020px){
-  #hello {
-    font-size: 3.5em;
-    margin: 1.55em 0.75em;
-  }
-  
-  #name1 {
-    font-size: 6.5em;
-    margin:1em 0em;
-  }
-  
-  #name2 {
-    font-size: 6.5em;
-    margin: 1.2em 0em;
-  }
-}
-
-
