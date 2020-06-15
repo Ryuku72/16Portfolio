@@ -1,11 +1,28 @@
 #navbar {
-  transition: all 1s ease-out;
+  transition: all 1s;
 }
 
 #buttonSeq {
-  transition: all 0.5s ease-out;
+  transition: all 0.5s;
 }
 
+.slider {
+  transition: 0.6s ease;
+}
+
+#rightBtn {
+ right: 0;
+ border-radius: 5px 0 0 5px;
+}
+
+#leftBtn {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.slider:hover {
+  background-color: rgba(118, 177, 126, 0.8);
+}
 
 .preNavHeader {
   position: absolute;
@@ -19,11 +36,12 @@
 }
 
 .navHeader{
-  position: sticky;
+  position: absolute;
+  top:0;
   display: inline-flex;
   vertical-align: middle;
   top: 0;
-  height: 2.5em;
+  height: 8vh;
   background-color: rgb(45, 55, 72);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 92% 24%, 89% 77%, 82% 61%, 77% 100%, 0 100%);
   font-size: 1.5em;
@@ -57,6 +75,14 @@
 #overlay.active {
   opacity: 0.8;
   pointer-events: all;
+}
+
+.imageShow {
+ display: grid;
+}
+
+.imageHide {
+display: none;
 }
 
 .pMarker {
