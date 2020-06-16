@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/mainAnimate.css">
 
-<div class="bg-blue-300 w-full h-full">
+<div class="w-full h-full z-0">
     <!-- Slideshow container -->
+
     <header id="navbar" class="bg-black h-screen subpixel-antialiased overflow-hidden">
 
         <!-- text -->
@@ -15,7 +16,7 @@
         </div>
         <!-- <h2 class="infoTitle">Scroll below for more information</h2> -->
 
-        <div class="block pt-64">
+        <div class="">
             <div id="titleSeq1" class="bg-green-500 animation" style="z-index:4"></div>
             <div id="titleSeq2" class="bg-yellow-600 animation" style="z-index:3"></div>
             <div id="titleSeq3" class="bg-pink-500 animation" style="z-index:2"></div>
@@ -25,33 +26,21 @@
             <div id="smoke" style="z-index:6; position: absolute; bottom: 16%; right: 18.5%"></div>
         </div>
     </header>
+</div>
 
-    <nav id="buttonSeq" class="preNavHeader w-full z-10 subpixel-antialiased">
+    <nav id="buttonSeq" class="preNavHeader w-full z-20 subpixel-antialiased">
         <button id="project" href="#week1" tabindex="1" class="pMarker w-64 ml-16 hover:text-yellow-400"><a
                 class="hide">//</a>Pr<a class="hide">o</a>j<a class="hide">ec</a>t<a class="hide">s</a></button>
         
         <button id="about" tabindex="2" class="pMarker w-64 hover:text-purple-400">ab<a class="hide">ou</a>t<a
                 class="hide">//</a>m<a class="hide">e</a></button>
-        <button id="contact" tabindex="3" class="pMarker w-64 hover:text-blue-500">c<a class="hide">on</a>t<a
+        <button id="contact" tabindex="3" class="contactBtn pMarker w-64 hover:text-blue-500">c<a class="hide">on</a>t<a
                 class="hide">a</a>ct<a class="hide">//</a></button>
     </nav>
 
+    <div id="overlay" class="z-20 opacity-0 bg-gray-300 bg-opacity-50"></div>
 
-    <section id="disclaimer" class="z-30 p-8 bg-red-500 mx-auto rounded-lg" style="width:60%; height:40%">
-        <h1>Disclaimer!</h1>
-        <p>Yesterday an apple created gravity</p>
-        <p>Tomorrow space will be reality</p>
-        <p>and today, I will dream about Lorem Ipsum</p>
-        <button>Week 1 - 6: frontEnd</button>
-        <button>Week 7 - 11: backEnd</button>
-        <button>Week 12 - 17: dataBases</button>
-        <button>Week 18 - 22: full stack</button>
-        <button>All</button>
-    </section>
-
-    <div id="overlay" class="z-20 opacity-0 bg-purple-400"></div>
-
-    <main id="section-container" class="h-full text-center bg-blue-300 hide overflow-auto relative">
+    <main id="section-container" class="absolute top-0 z-20 w-full text-center bg-transparent hide overflow-auto">
 
         <div id="slide1" data-slide="1"
             class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 imageShow slides overflow-hidden">
@@ -273,7 +262,7 @@
              <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week16">&times;</a> 
              <a class="wkTtl pMarker text-4xl text-center">WEEK 16</a>
             <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
-                <p class="text-xl text-left mx-4 my-4">CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER <span class="text-red-700">CONSTRUCTION</span>. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME.</p>
+                <p class="text-xl text-left mx-4 my-4">THIS IS WEEK 16. WILL POST MORE SOON. STILL UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. THIS IS WEEK 16. CURRENT PROJECT. WILL <span class="text-purple-700 text-5xl">UPDATE</span>. PLEASE CHECK BACK SOON. THIS IS WEEK 16. WILL POST MORE SOON. STILL UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. THIS IS WEEK 16.CURRENT. WILL UPDATE. PLEASE CHECK BACK SOON.</p>
                 </div></div>
 
             <div id="week17" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle"
@@ -338,15 +327,40 @@
         <a id="rightBtn" class="absolute right-0 w-auto font-bold text-white text-4xl px-4 slider"
             data-rightt="{{imageShow}}" style="top: 50%" href="#">&#10095;</a>
 
-
     </main>
-    <footer class="hide absolute bottom-0 w-full bg-gray-800 flex justify-end align-bottom"
+    <footer class="hide absolute bottom-0 z-30 w-full bg-gray-800 flex justify-end align-bottom"
         style="clip-path: polygon(0 0, 9% 0, 26% 65%, 45% 0, 100% 0, 100% 32%, 100% 100%, 0 100%);"
         style="height: 10vh">
         <p class="text-xl text-pink-600 mr-6 mt-2" style="font-family:'Share Tech Mono', monospace">Foreign
             Toolkit 2020</p>
     </footer>
 
+    <div id="overlay2" class="z-40 opacity-0 bg-purple-400"></div>
 
-</div>
+        <section id="aboutPage" class="z-50 relative p-8 bg-red-500 mx-auto rounded-lg" style="width:60%; height:70%; clip-path: polygon(94% 100%, 86% 81%, 81% 93%, 73% 96%, 64% 91%, 50% 100%, 0 100%, 0 0, 100% 0, 100% 100%);">
+        <div class="w-11/12 h-full border-l-2 border-black relative flex flex-col justify-center align-middle">
+        <a id="popBtn" class="absolute top-0 right-0 text-4xl hover:text-white hide inline-flex">&times;</a> 
+        <div class="ml-10 text-2xl font-mono">
+        <h1>Hi my name is Joshua K Bader</h1>
+        <p>I am a full-stack developer, Japanese speaker, Film Enthusiast and lover of art!</p>
+        <p>I am from Newman, Western Australia</p>
+        <p>And I like to draw my pages with a permanent marker</p>
+        <br>
+        <p>JKB || HOME was built with little sleep and a foreign toolkit</p>
+        <a class="bg-black hover:bg-orange-400 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-12" href="https://drive.google.com/file/d/1K_C_3zN3YGtT3RmnAp1Q0BLEbUy7iPbO/view?usp=sharing">
+        <svg class="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M8 4c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h2zm0 2H6v14h12V6h-2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2zm2-2v2h4V4h-4z"/></svg>
+        <span>Resume</span>
+        </a>
+        <a class="contactBtn bg-black hover:bg-green-400 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-12">
+        <svg class="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 0 1-.9 0L4 9.62V18h16V9.62z"/></svg>
+        <span>Contact</span>
+        </a>
+        </div>
+        </div>
+    </section>
+
+    <div id="overlay" class="z-20 opacity-0 bg-purple-400"></div>
+
+
+
 <script src="./js/main.js"></script>

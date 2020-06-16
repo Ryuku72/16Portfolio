@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+  $("#project").click(function () {
+    $("#buttonSeq").toggleClass("preNavHeader");
+    $("#buttonSeq").toggleClass("navHeader");
+    $("#project").children().toggleClass("hide");
+    $("#section-container").toggleClass("hide");
+    $("footer").toggleClass("hide");
+    $("#overlay").toggleClass("active");
+  });
+  
   $(".closeBtn").click(function(e){
     event.stopPropagation()
     let weekID = $("#"+$(this).data("week")) 
@@ -8,18 +17,16 @@ $(document).ready(function () {
     weekID.children(".prjInfo").toggleClass("hide")
   })
 
-  $("#contact").click(function () {
-    $("#disclaimer").toggleClass("active");
-    $("#overlay").toggleClass("active");
+  $("#about").click(function () {
+    $("#aboutPage").toggleClass("active");
+    $("#overlay2").toggleClass("active");
+    $("#popBtn").toggleClass("hide");
   });
 
-  $("#project").click(function () {
-    $("#navbar").toggleClass("hide");
-    $("#buttonSeq").toggleClass("preNavHeader");
-    $("#buttonSeq").toggleClass("navHeader");
-    $("#project").children().toggleClass("hide");
-    $("#section-container").toggleClass("hide");
-    $("footer").toggleClass("hide");
+  $("#popBtn").click(function () {
+    $("#aboutPage").toggleClass("active");
+    $("#overlay2").toggleClass("active");
+    $("#popBtn").toggleClass("hide");
   });
 
   $(".prjBox").on("click", function () {
@@ -65,51 +72,11 @@ $(document).ready(function () {
     }
   });
 
-  //  function showSlides(){
-  //         let slideIndex = 0;
-  //         let i;
-  //         const slides = $(".slides")
-  //         for (i=0; i < slides.length; i++){
-  //             slides[i].style.display = "none";
-  //         }
-  //         slideIndex++;
-  //         if (slideIndex > slides.length){
-  //             slideIndex = 1
-  //         }
-  //             slides[slideIndex-1].style.display = "grid";
-  //             setTimeout(showSlides, 3000);
-  //         }
+  $(".contactBtn").on("click", function(){
+    window.location.replace("/contact");
+  })
 
-  //         showSlides()
-
-  // $("#project").click(function(){
-  //     $("#section-container").toggleClass("hide");
-  //     $("footer").toggleClass("hide");
-  // })
-
-  // $(window).on("scroll touchmove", function(){
-  //     $("#navbar").toggleClass("tiny", "h-screen", $(document).scrollTop() > 0)
-  // })
+  
 });
 
-// $("#about").click(function(){
-//   $("#prjSection").addClass("hide");
-// })
 
-// $("#contact").click(function(){
-//   $(".popContainer").addClass("active");
-//   $("#overlay").addClass("active");
-// })
-// $("#popupClose").click(function(){
-//   $(".popContainer").removeClass("active");
-//   $("#overlay").removeClass("active");
-// })
-
-// $(".submitButton").click(function(){
-//   if ($(".popInput").val() == "") {
-//     alert ("Please fill in all the boxes.\nTo exit click the 'X' button")
-//   } else {
-//   $(".popContainer").removeClass("active");
-//   $("#overlay").removeClass("active");
-//   }
-// })

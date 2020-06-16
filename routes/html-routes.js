@@ -1,3 +1,6 @@
+const path = require("path");
+const isAuthenticated = require("../config/middleware/isAuthenticated");
+
 
 module.exports = function(app){
 // get request to index.handlebars
@@ -5,8 +8,24 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-//get request to contact.handlebars
+app.get("/contact", function(req, res) {
 
-//get request for login page
-
+if (req.user) {
+    res.redirect("/members");
 }
+res.sendFile(path.join(__dirname, "../public/mock/signup.html"));
+});
+
+app.get("/login", function(req, res) {
+
+if (req.user) {
+    res.redirect("/members");
+}
+res.sendFile(path.join(__dirname, "../public/mock/login.html"));
+});
+
+app.get("/members", isAuthenticated, function(req, res) {
+res.sendFile(path.join(__dirname, "../public/mock/members.html"));
+});
+
+};
