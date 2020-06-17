@@ -4,7 +4,8 @@
   "description": "Update Profile Page",
   "main": "server.js",
   "scripts": {
-    "build": "postcss public/css/tailwind.css -o public/build/tailwind.css",
+    "build": 
+      "postcss public/css/tailwind.css -o public/build/tailwind.css",
     "start": "node server.js"
   },
   "repository": {
@@ -24,12 +25,10 @@
     "chalk": "^4.1.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
-    "express-session": "^1.17.1",
     "mysql2": "^2.1.0",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
+    "netlify-lambda": "^1.6.3",
     "postcss-cli": "^7.1.1",
-    "sequelize": "^5.21.12",
+    "serverless-http": "^2.5.0",
     "tailwindcss": "^1.4.6"
   }
 }

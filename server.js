@@ -19,8 +19,7 @@ app.use(express.json());
 //Requiring our routes
 require("./routes/html-routes.js")(app)
 
-
-//sequelize and listener
+//listener
 app.listen(PORT, function () {
     console.log(
       chalk.bold.blue("Listening on port %s. 🌎"),
@@ -32,4 +31,5 @@ app.listen(PORT, function () {
         chalk.bold.green(" in your browser")
     );
   });
+
 

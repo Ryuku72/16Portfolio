@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="En-Aus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>JKB || HOME</title>
+      <link rel="stylesheet" href="./public/css/main.css">
+      <link rel="stylesheet" href="./public/css/mainAnimate.css">
+    </head>
+
+<body>
+  
+    
+    <div class="w-full h-full z-0">
+        <!-- Slideshow container -->
+    
+        <header id="navbar" class="bg-black h-screen subpixel-antialiased overflow-hidden">
+    
+            <!-- text -->
+            <div class="w-full flex flex-row justify-end pr-20 pt-10">
+                <ul class="text-2xl pMarker text-right z-10">
+                    <li id="hello" class="mr-16" style="font-size: 3.5em; margin-bottom: -0.8em">HELLO. I AM</li>
+                    <li id="name1" class="mr-12" style="font-size: 7.5em; margin-bottom: -0.6em">JOSHUA K.</li>
+                    <li id="name2" style="font-size: 7.5em;">// BADER</li>
+                </ul>
+            </div>
+            <!-- <h2 class="infoTitle">Scroll below for more information</h2> -->
+    
+            <div class="">
+                <div id="titleSeq1" class="bg-green-500 animation" style="z-index:4"></div>
+                <div id="titleSeq2" class="bg-yellow-600 animation" style="z-index:3"></div>
+                <div id="titleSeq3" class="bg-pink-500 animation" style="z-index:2"></div>
+                <div id="titleSeq4" class="bg-blue-300 animation" style="z-index:1"></div>
+                <div id="moon" class="animation" style="z-index:6"></div>
+                <div id="house" style="z-index:7; position: absolute; bottom: 4%; right: 24%"></div>
+                <div id="smoke" style="z-index:6; position: absolute; bottom: 16%; right: 18.5%"></div>
+            </div>
+        </header>
+    </div>
+    
+        <nav id="buttonSeq" class="preNavHeader w-full z-20 subpixel-antialiased">
+            <button id="project" href="#week1" tabindex="1" class="pMarker w-64 ml-16 hover:text-yellow-400"><a
+                    class="hide">//</a>Pr<a class="hide">o</a>j<a class="hide">ec</a>t<a class="hide">s</a></button>
+            
+            <button id="about" tabindex="2" class="pMarker w-64 hover:text-purple-400">ab<a class="hide">ou</a>t<a
+                    class="hide">//</a>m<a class="hide">e</a></button>
+            <button id="contact" tabindex="3" class="contactBtn pMarker w-64 hover:text-blue-500">c<a class="hide">on</a>t<a
+                    class="hide">a</a>ct<a class="hide">//</a></button>
+        </nav>
+    
+        <div id="overlay" class="z-20 opacity-0 bg-gray-300 bg-opacity-50"></div>
+    
+        <main id="section-container" class="absolute top-0 z-20 w-full text-center bg-transparent hide overflow-auto">
+    
+            <div id="slide1" data-slide="1"
+                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 imageShow slides overflow-hidden">
+    
+                <div id="week1" class="prjBox relative bg-cover row-span-2 w-full flex justify-center flex-col align-middle" style="clip-path: polygon(100% 56%, 90% 75%, 96% 90%, 65% 100%, 0 100%, 0 0, 100% 0); 
+                background-image: url(./public/img/week1.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week1">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 1</a>
+                    <div class="prjInfo hide text-left w-full h-full flex-wrap bg-red-400">
+                    <p class="text-4xl mx-8 mt-6">Horisen</p>
+                    <p class="text-lg mx-8">15/02/2020</p>
+                    <p class="text-md ml-8 mr-20 my-4">Take existing Html and CSS project files and refractor it to meet a particular outline. For extra flare, show addition understanding of html and css through application.</p>
+                    <a class="ml-8 fa fa-globe text-base" href="https://ryuku72.github.io/HomeworkW1/">&nbsp;Website</a>
+                    <a class="mx-4 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW1">&nbsp;GitHub</a>
+                    <a class="ml-3 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW1/blob/master/README.md">&nbsp;ReadMe</a>
+                    </div>
+                </div>
+    
+                <div id="week2" class="prjBox relative bg-cover col-span-2 w-full flex flex-col justify-center align-middle" style=" clip-path: polygon(35% 100%, 17% 100%, 0 100%, 0 0, 79% 0, 90% 13%, 100% 0, 100% 100%);
+                 background-image: url(./public/img/week2.jpg)">
+                 <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week2">&times;</a> 
+                    <a class="wkTtl text-center pMarker text-4xl">WEEK 2</a>
+                         <div class="prjInfo hide text-left w-full h-full bg-green-400">
+                    <p class="text-4xl mx-8 mt-6">Portfolio ver.1<span class="text-lg mx-6">&nbsp;23/02/2020</span></p>
+                    <p class="text-md ml-8 mr-20 my-4 mr-24">Utilizing the CSS framework Bootstrap to make a responsive profile website that tells us a little bit about yourself </p>
+                    <a class="ml-8 fa fa-globe text-base" href="https://ryuku72.github.io/HomeworkW2/">&nbsp;Website</a>
+                    <a class="mx-4 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW2">&nbsp;GitHub</a>
+                    <a class="ml-3 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW2/blob/master/README.md">&nbsp;ReadMe</a>
+                    </div>
+                    </div>
+    
+                <div id="week3" class="prjBox relative bg-cover w-full flex flex-col justify-center align-middle" style="clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 11% 76%, 0 53%, 0 0);
+                background-image: url(./public/img/week3.jpg)">
+                 <a class="closeBtn absolute top-0 left-0 ml-6 mt-2 text-4xl hover:text-red-700 hide inline-flex" data-week="week3">&times;</a> 
+                           <a class="wkTtl text-center pMarker text-4xl">WEEK 3</a>
+                         <div class="prjInfo hide text-right w-full h-full bg-purple-400">
+                    <p class="text-2xl mx-8 mt-2">Password Generator</p>
+                    <p class="text-lg mx-8">02/03/2020</p>
+                    <p class="text-md mx-6 my-2">Using JavaScript create a Random Password Generator that uses functions, variables and alerts. Try to make your password unique and include as many questions as possible to better provide a unique outcome.</p>
+                     <a class="ml-8 fa fa-globe text-base" href="https://ryuku72.github.io/HomeworkW3/">&nbsp;Website</a>
+                    <a class="mx-4 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW3/">&nbsp;gitHub</a>
+                    <a class="mr-8 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW3/blob/master/README.md">&nbsp;readMe</a>
+                    </div></div>
+    
+                <div id="week4" class="prjBox relative bg-cover row-span-2 w-full flex flex-col justify-center align-middle" style="clip-path: polygon(0 100%, 0 0, 90% 0, 87% 11%, 97% 15%, 94% 29%, 100% 43%, 100% 100%);
+                background-image: url(./public/img/week4.jpg)">
+                 <a class="closeBtn absolute top-0 right-0 mr-24 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week4">&times;</a> 
+                      <a class="wkTtl text-center pMarker text-4xl">WEEK 4</a>
+                         <div class="prjInfo hide text-left w-full h-full bg-yellow-400">
+                    <p class="text-4xl mx-6 mt-6">Quiz App</p>
+                    <p class="text-lg mx-6">11/03/2020</p>
+                    <p class="text-md ml-6 mr-20 my-4">Using DOM manipulation create a web application that takes the answers from multiple alert functions to produce a quiz result. Extra points for unique CSS elements and accurate function interactions</p>
+                    <a class="ml-8 fa fa-globe text-base" href="https://ryuku72.github.io/HomeworkW4/">&nbsp;Website</a>
+                    <a class="mx-4 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW4/">&nbsp;GitHub</a>
+                    <a class="mr-8 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW4/blob/master/README.md">&nbsp;ReadMe</a>
+                    </div></div>
+    
+                <div id="week5" class="prjBox relative bg-cover col-span-2 w-full flex flex-col justify-center align-middle" style="clip-path: polygon(35% 100%, 17% 100%, 0 73%, 0 0, 79% 0, 90% 13%, 100% 0, 100% 100%);
+                background-image: url(./public/img/week5.jpg)">
+                 <a class="closeBtn absolute top-0 right-0 mr-56 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week5">&times;</a> 
+                      <a class="wkTtl text-center pMarker text-4xl">WEEK 5</a>
+                         <div class="prjInfo hide text-center w-full h-full bg-gray-400">
+                    <p class="text-4xl mx-6 mt-6 text-left">Day Planner<span class="text-lg mx-6">&nbsp;18/03/2020</span></p>
+                    <p class="text-md mx-6 my-4 text-left">With the introduction of JQuery create a web application that records a patron's assigned task into their local storage ensuring that when the page is refreshed the data remains. Extra points if you can save data according to the date</p>
+                 <a class="ml-8 fa fa-globe text-base" href="https://ryuku72.github.io/HomeworkW5/">&nbsp;Website</a>
+                    <a class="mx-4 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW5/">&nbsp;GitHub</a>
+                    <a class="mr-8 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW5/blob/master/README.md">&nbsp;ReadMe</a>
+                    </div></div>
+    
+            </div>
+            <div id="slide2" data-slide="2"
+                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
+    
+                <div id="week6" class="prjBox relative bg-cover row-span-2 w-full flex flex-col justify-center align-middle" style="clip-path: polygon(50% 0%, 100% 0, 100% 77%, 72% 100%, 49% 83%, 31% 100%, 15% 100%, 8% 100%, 0 100%, 0 0);
+                background-image: url(./public/img/week6.jpg)">
+                 <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week6">&times;</a> 
+                         <a class="wkTtl pMarker text-4xl text-center">WEEK 6</a>
+                    <div class="prjInfo hide text-left w-full h-full bg-orange-500 text-white">
+                    <p class="text-4xl mx-6 mt-6">Weather App</p>
+                    <p class="text-lg mx-6">26/03/2020</p>
+                    <p class="text-md mx-6 my-4">Using AJAX calls append information regarding the weather report of an entered city into your page</p>
+                    <a class="mx-6 fa fa-globe text-base" href="https://ryuku72.github.io/HomeworkW6/">&nbsp;Website</a>
+                    <a class="mx-6 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW6">&nbsp;GitHub</a>
+                    <a class="mx-6 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW6/blob/master/README.md">&nbsp;ReadMe</a>
+                    </div>
+                    </div>
+    
+                <div id="week7" class="prjBox relative bg-cover col-span-2 w-full flex flex-col justify-center align-middle" style="clip-path: polygon(23% 22%, 35% 0, 100% 0, 100% 100%, 21% 100%, 11% 72%, 0 100%, 0 0, 11% 0); background-image: url(./public/img/week7.jpg)">
+                 <a class="closeBtn absolute top-0 leftt-0 ml-6 mt-3 text-4xl text-red-700 hover:text-green-500 hide inline-flex" data-week="week7">&times;</a> 
+                            <a class="wkTtl pMarker text-4xl text-center">WEEK 7</a>
+                    <div class="prjInfo hide w-full h-full bg-black text-white text-right">
+                    <p class="text-4xl mx-12 mt-6">Group Activity: COVID 19</p>
+                    <p class="text-lg mx-12">31/03/2020</p>
+                    <p class="text-md mr-12 ml-32 my-4">In a team consisting of 3 people, make a web application that uses at least 3 APIs,</p>
+                    <p class="text-md mr-12 ml-32 my-4">a new CSS Framework and server-side library to make an unique </p>
+                    <p class="text-md mr-12 ml-32 mt-2 mb-6">Web Application.</p>
+                    <a class="mx-3 fa fa-globe text-base" href="https://ryuku72.github.io/HomeworkW7/">&nbsp;Website</a>
+                    <a class="mx-3 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW7">&nbsp;GitHub</a>
+                    <a class="mr-12 ml-6 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW7/blob/master/README.md">&nbsp;ReadMe</a>
+                    </div>
+                    </div>
+    
+                <div id="week8" class="prjBox relative bg-no-repeat bg-bottom w-full flex flex-col justify-center align-middle" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 60%);
+                background-image: url(./public/img/week8.jpg)">
+                 <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week8">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 8</a>
+                    <div class="prjInfo hide w-full h-full bg-green-700 text-white text-center">
+                    <p class="text-4xl mx-6 mt-6">Profile ver. II</p>
+                    <p class="text-lg mx-6">14/04/2020</p>
+                    <p class="text-md mx-6 my-4">Keyframes, Pop-windows and CSS flare</p>
+                    <a class="mx-6 fa fa-globe text-base" href="https://ryuku72.github.io/Navigator/">&nbsp;Website</a>
+                    <a class="mx-6 fa fa-github text-base" href="https://github.com/Ryuku72/Navigator">&nbsp;GitHub</a>
+                    <a class="mx-6 fa fa-clipboard text-base" href="https://github.com/Ryuku72/Navigator/blob/master/README.md">&nbsp;ReadMe</a>
+                    </div>
+                    </div>
+    
+                <div id="week9" class="prjBox relative bg-bcover w-full flex flex-col justify-center align-middle" style="clip-path: polygon(100% 100%, 57% 100%, 31% 100%, 21% 75%, 14% 91%, 8% 84%, 0 100%, 0 0, 100% 0);
+                background-image: url(./public/img/week9.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week9">&times;</a> 
+                          <a class="wkTtl pMarker text-4xl text-center">WEEK 9</a>
+                    <div class="prjInfo hide w-full h-full bg-purple-800 text-white text-center">
+                    <p class="text-4xl mx-6 mt-6">Readme Generator</p>
+                    <p class="text-lg mx-6">22/04/2020</p>
+                    <p class="text-md mx-6 my-4">Use Node.JS, NPM and ES6 to create a text generator</p>
+                    <a class="mx-6 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW9">&nbsp;GitHub</a>
+                    <a class="mx-6 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW9/blob/master/README.md">&nbsp;Readme</a>
+                     <a class="mx-6 fa fa-youtube-play text-base" href="https://www.youtube.com/watch?v=joEQlJG0Eyw">&nbsp;Video</a>
+                    </div></div>
+    
+                <div id="week10" class="prjBox relative bg-cover w-full flex flex-col justify-center align-middle col-span-2" style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);
+                background-image: url(./public/img/week10.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week10">&times;</a> 
+                                <a class="wkTtl pMarker text-4xl text-center">WEEK 10</a>
+                    <div class="prjInfo hide text-left w-full h-full bg-red-800 text-white">
+                    <p class="text-4xl mx-6 mt-6">Group Profile Generator</p>
+                    <p class="text-lg mx-6">01/05/2020</p>
+                    <p class="text-md mx-6 my-4">Use Objects, callbacks, protypes and tests to build a workplace html generator</p>
+                    <a class="mx-6 fa fa-address-book-o text-base" href="https://ryuku72.github.io/HomeworkW10/">&nbsp;Mock</a>
+                    <a class="mx-6 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW10">&nbsp;GitHub</a>
+                    <a class="mx-6 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW10/blob/master/README.md">&nbsp;Readme</a>
+                    <a class="mx-6 fa fa-youtube-play text-base" href="https://youtu.be/FWMDHz_RQfg">&nbsp;Video</a>
+                    </div></div>
+    
+                <div id="week11" class="prjBox relative bg-bcover w-full flex flex-col justify-center align-middle" style="clip-path: polygon(100% 44%, 91% 56%, 94% 77%, 82% 79%, 88% 100%, 0 100%, 0 0, 100% 0);
+                background-image: url(./public/img/week11.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-16 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week11">&times;</a> 
+                                    <a class="wkTtl pMarker text-4xl text-center">WEEK 11</a>
+                    <div class="prjInfo hide text-left w-full h-full bg-blue-800 text-white">
+                    <p class="text-4xl mx-10 mt-6">Note Taker</p>
+                    <p class="text-lg mx-10">09/05/2020</p>
+                    <p class="text-md mx-10 my-4">Deploy to Heroku a web app that uses Express and Routes</p>
+                    <a class="mx-10 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW11">&nbsp;GitHub</a>
+                    <a class="mx-10 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW11/blob/master/README.md">&nbsp;Readme</a>
+                    <a class="mx-10 fa fa-header text-base" href="https://fathomless-ocean-28827.herokuapp.com/notes">&nbsp;Heroku</a>
+                    <a class="mx-10 fa fa-youtube-play text-base" href="https://youtu.be/FMc9-VJT15g">&nbsp;Video</a>
+                    </div></div>
+    
+            </div>
+            <div id="slide3" data-slide="3"
+                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
+    
+                <div id="week12" class="prjBox relative bg-bcover w-full flex flex-col justify-center align-middle col-span-2" style="clip-path: polygon(100% 100%, 92% 88%, 85% 65%, 79% 89%, 71% 79%, 60% 100%, 0 100%, 0 0, 100% 0);
+                background-image: url(./public/img/week12.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week12">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 12</a>
+                    <div class="prjInfo hide text-left w-full h-full bg-indigo-400">
+                    <p class="text-4xl mx-6 mt-6">Employee Taker App</p>
+                    <p class="text-lg mx-6">16/05/2020</p>
+                    <p class="text-md mx-6 my-4">This week is about express, inquirer, node.js and their interaction with mySQL. Given the foundamentals CREATE, READ, UPDATE and DESTROYS a database for a company and their employees. </p>
+                    <a class="mx-6 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW12">&nbsp;GitHub</a>
+                    <a class="mx-6 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW12/blob/master/README.md">&nbsp;Readme</a>
+                    <a class="mx-6 fa fa-youtube-play text-base" href="https://youtu.be/JosM2APXioY">&nbsp;Video</a>
+                    </div></div>
+    
+                <div id="week13" class="prjBox relative bg-bcover w-full flex flex-col justify-center align-middle row-span-2" style="clip-path: polygon(100% 61%, 98% 80%, 90% 100%, 65% 100%, 0 100%, 9% 79%, 0 59%, 0 0, 100% 0);
+                background-image: url(./public/img/week13.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week13">&times;</a> 
+                     <a class="wkTtl pMarker text-4xl text-center">WEEK 13</a>
+                    <div class="prjInfo hide text-left w-full h-full bg-green-400">
+                    <p class="text-4xl mx-12 mt-24">Oh!Bad burger APP</p>
+                    <p class="text-lg mx-12">25/05/2020</p>
+                    <p class="text-md mx-12 my-5">Using Handlebars, MySQL database and Express.JS create a burger web application that allows orders to be submitted on Heroku</p>
+                    <a class="ml-12 mr-6 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW13">&nbsp;GitHub</a>
+                    <a class="mx-6 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW13/blob/master/README.md">&nbsp;Readme</a>
+                    <a class="ml-6 mr-12 fa fa-header text-base" href="https://aqueous-wildwood-59065.herokuapp.com/#">&nbsp;Heroku</a>
+                    </div></div>
+    
+                <div id="week14" class="prjBox relative bg-bcover w-full flex flex-col justify-center align-middle" style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);
+                background-image: url(./public/img/week14.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week14">&times;</a> 
+                     <a class="wkTtl pMarker text-4xl text-center">WEEK 14</a>
+                    <div class="prjInfo hide text-left w-full h-full bg-pink-500">
+                    <p class="text-4xl mx-12 mt-20">Passport Document</p>
+                    <p class="text-lg mx-12">12/06/2020</p>
+                    <p class="text-md mx-12 my-5">Analysis a folder containing a passport authentication app. Reverse engineer each component and document what you think is the process on implementing passport into a website</p>
+                    <a class="ml-12 mr-6 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW13">&nbsp;GitHub</a>
+                    <a class="mx-6 fa fa-file-word-o text-base" href="https://drive.google.com/file/d/1iWOxhJ_shnkFwuyXOPgIC12dkcDRfnbK/view?usp=sharing">&nbsp;Document</a>
+                    </div></div>
+    
+                <div id="week15" class="prjBox relative bg-auto w-full flex flex-col justify-center align-middle" style="clip-path: polygon(100% 0, 100% 76%, 93% 100%, 0 100%, 4% 89%, 0 73%, 0 55%, 0 34%, 0 0);
+                background-image: url(./public/img/week15.jpg)">
+                <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week15">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 15</a>
+                    <div class="prjInfo hide text-left w-full h-full bg-gray-200">
+                    <p class="text-4xl mx-10 mt-20">Group Project II<span class="text-xl mx-3">Bookmarkr</span></p>
+                    <p class="text-lg mx-10">08/06/2020</p>
+                    <p class="text-md mx-10 my-4">In Team of 4, create a unique web application that contains authentication, a new CSS framework, uses a database and is deployed to Heroku</p>
+                    <a class="mx-10 fa fa-github text-base" href="https://github.com/Ryuku72/HomeworkW15">&nbsp;GitHub</a>
+                    <a class="mx-10 fa fa-clipboard text-base" href="https://github.com/Ryuku72/HomeworkW15/blob/master/README.md">&nbsp;Readme</a>
+                    <a class="mx-10 fa fa-header text-base" href="http://shrouded-shelf-71046.herokuapp.com/">&nbsp;Heroku</a>
+                    </div></div>
+    
+            </div>
+            <div id="slide4" data-slide="4"
+                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
+                
+                <div id="week16" class="prjBox relative bg-no-repeat bg-bottom w-full flex flex-col justify-center align-middle row-span-2" style="clip-path: polygon(100% 0, 100% 76%, 93% 100%, 0 100%, 0 29%, 0 0, 8% 0, 16% 12%, 26% 0); background-image: url(./public/img/week16.jpg);
+                 background-size: 120% 130%">
+                 <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week16">&times;</a> 
+                 <a class="wkTtl pMarker text-4xl text-center">WEEK 16</a>
+                <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
+                    <p class="text-xl text-left mx-4 my-4">THIS IS WEEK 16. WILL POST MORE SOON. STILL UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. THIS IS WEEK 16. CURRENT PROJECT. WILL <span class="text-purple-700 text-5xl">UPDATE</span>. PLEASE CHECK BACK SOON. THIS IS WEEK 16. WILL POST MORE SOON. STILL UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. THIS IS WEEK 16.CURRENT. WILL UPDATE. PLEASE CHECK BACK SOON.</p>
+                    </div></div>
+    
+                <div id="week17" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle"
+                    style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);background-image: url(./public/img/wip.jpg)">
+                    <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week17">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 17</a>
+                    <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
+                    <p class="text-xl text-left mx-4 my-4">CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER <span class="text-red-700">CONSTRUCTION</span>. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME.</p>
+                    </div></div>
+    
+    
+                <div id="week18" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle row-span-2"
+                    style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);background-image: url(./public/img/wip.jpg)">
+                    <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week18">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 18</a>
+          <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
+                    <p class="text-xl text-left mx-4 my-4">CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER <span class="text-red-700">CONSTRUCTION</span>. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME.</p>
+                    </div></div>
+    
+    
+                <div id="week19" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle"
+                    style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);background-image: url(./public/img/wip.jpg)">
+                    <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week19">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 19</a>
+         <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
+                    <p class="text-xl text-left mx-4 my-4">CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER <span class="text-red-700">CONSTRUCTION</span>. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME.</p>
+                    </div></div>
+    
+            </div>
+            <div id="slide5" data-slide="5"
+                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
+    
+                <div id="week20" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle"
+                    style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);background-image: url(./public/img/wip.jpg)">
+                    <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week20">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 20</a>
+                 <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
+                    <p class="text-xl text-left mx-4 my-4">CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER <span class="text-red-700">CONSTRUCTION</span>. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME.</p>
+                    </div></div>
+    
+                <div id="week21" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle col-span-2"
+                    style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);background-image: url(./public/img/wip.jpg)">
+                    <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week21">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 21</a>
+              <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
+                    <p class="text-xl text-left mx-4 my-4">CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER <span class="text-red-700">CONSTRUCTION</span>. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME.</p>
+                    </div></div>
+    
+                <div id="week22" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle col-span-2"
+                    style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);background-image: url(./public/img/wip.jpg)">
+                    <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week22">&times;</a> 
+                    <a class="wkTtl pMarker text-4xl text-center">WEEK 22</a>
+                 <div class="prjInfo hide w-full h-full flex flex-col justify-center align-middle bg-white">
+                    <p class="text-xl text-left mx-4 my-4">CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER <span class="text-red-700">CONSTRUCTION</span>. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME. CURRENT UNDER CONSTRUCTION. PLEASE CHECK ANOTHER TIME.</p>
+                    </div></div>
+    
+    
+            </div>
+    
+            <a id="leftBtn" class="absolute left-0 w-auto font-bold text-white text-4xl px-4 slider"
+                data-left="{{imageShow}}" style="top: 50%" href="#">&#10094;</a>
+            <a id="rightBtn" class="absolute right-0 w-auto font-bold text-white text-4xl px-4 slider"
+                data-rightt="{{imageShow}}" style="top: 50%" href="#">&#10095;</a>
+    
+        </main>
+        <footer class="hide absolute bottom-0 z-30 w-full h-12 bg-gray-800 flex justify-end align-middle items-center"
+            style="clip-path: polygon(0 0, 9% 0, 26% 65%, 45% 0, 100% 0, 100% 32%, 100% 100%, 0 100%);">
+            <a class="fa fa-twitter mr-6 text-center p-1 h-6 w-10 rounded-lg items-center inline-flex justify-center" href="https://twitter.com/Ryuu7i"></a>
+            <a class="fa fa-github-alt mr-6 text-center p-1 h-6 w-10 rounded-lg items-center inline-flex justify-center" href="https://github.com/Ryuku72"></a>
+            <a class="fa fa-linkedin mr-10 text-center p-1 h-6 w-10 rounded-lg items-center inline-flex justify-center" href="https://www.linkedin.com/in/joshua-bader-31986519b/"></a>
+            <p class="text-xl text-pink-600 my-auto mr-6" style="font-family:'Share Tech Mono', monospace">Foreign
+                Toolkit 2020</p>
+        </footer>
+    
+        <div id="overlay2" class="z-40 opacity-0 bg-purple-400"></div>
+    
+            <section id="aboutPage" class="z-50 relative p-8 bg-red-500 mx-auto rounded-lg" style="width:60%; height:70%; clip-path: polygon(94% 100%, 86% 81%, 81% 93%, 73% 96%, 64% 91%, 50% 100%, 0 100%, 0 0, 100% 0, 100% 100%);">
+            <div class="w-11/12 h-full border-l-2 border-black relative flex flex-col justify-center align-middle">
+            <a id="popBtn" class="absolute top-0 right-0 text-4xl hover:text-white hide inline-flex">&times;</a> 
+            <div class="ml-10 text-2xl font-mono">
+            <h1>Hi my name is Joshua K Bader</h1>
+            <p>I am a full-stack developer, Japanese speaker, Film Enthusiast and lover of art!</p>
+            <p>I am from Newman, Western Australia</p>
+            <p>And I like to draw my pages with a permanent marker</p>
+            <br>
+            <p>JKB || HOME was built with little sleep and a foreign toolkit</p>
+            <a class="bg-black hover:bg-orange-400 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-12" href="https://drive.google.com/file/d/1K_C_3zN3YGtT3RmnAp1Q0BLEbUy7iPbO/view?usp=sharing">
+            <svg class="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M8 4c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h2zm0 2H6v14h12V6h-2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2zm2-2v2h4V4h-4z"/></svg>
+            <span>Resume</span>
+            </a>
+            <a class="contactBtn bg-black hover:bg-green-400 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-12">
+            <svg class="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 0 1-.9 0L4 9.62V18h16V9.62z"/></svg>
+            <span>Contact</span>
+            </a>
+            </div>
+            </div>
+        </section>
+    
+        <div id="overlay" class="z-20 opacity-0 bg-purple-400"></div>
+    
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>
