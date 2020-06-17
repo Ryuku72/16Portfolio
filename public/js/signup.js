@@ -11,8 +11,6 @@ $(document).ready(function () {
       password: passwordInput.val().trim()
     };
 
-    console.log(userData)
-
     if (!userData.email || !userData.password) {
       return;
     }
@@ -33,8 +31,7 @@ $(document).ready(function () {
   }
 
   function handleLoginErr(err) {
-    const errorMsg = err.responseJSON.errors[0].message
-    $("#alert .msg").text(errorMsg);
+    $("#alert .msg").text(err.responseJSON);
     $("#alert").fadeIn(500);
   }
 });

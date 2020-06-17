@@ -2,25 +2,24 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "jkb_db",
+    "database": "joshuakb_db",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "dialect": "mysql"
+ 
   },
   "test": {
     "username": "root",
     "password": "root",
-    "database": "jkb_db_test",
+    "database": "joshuakb_db_test",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "dialect": "mysql"
+
   },
   "production": {
     "username": "root",
     "password": "root",
-    "database": "jkb_db_production",
+    "database": "joshuakb_db_production",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "dialect": "mysql"
   }
 }

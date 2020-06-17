@@ -37,6 +37,23 @@ html {
   border-radius: 0 5px 5px 0;
 }
 
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: rgb(42, 106, 167);
+  color: white;
+}
+
+.fa-github-alt {
+  background: rgb(27, 25, 55);
+  color: white;
+}
+
 .preNavHeader {
   position: absolute;
   bottom: 0;

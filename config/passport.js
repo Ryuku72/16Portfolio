@@ -8,21 +8,21 @@ passport.use(new LocalStrategy(
     usernameField: "email"
   },
   function (email, password, done) {
-    db.User.findOne({
+    db.user.findOrCreate({
       where: {
         email: email
-      }
+      },
+        defaults: {
+            password: password
+        },
     }).then(function (dbUser) {
+
+
       if (!dbUser) {
         return done(null, false, {
           message: "Incorrect email"
         });
       } 
-      else if (!dbUser.validPassword(password)) {
-        return done(null, false, {
-          message: "Incorrect password"
-        });
-      }
       return done(null, dbUser);
     })
   }
