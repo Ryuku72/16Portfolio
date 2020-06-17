@@ -3,7 +3,6 @@ $(document).ready(function () {
   $("#project").click(function () {
     $("#buttonSeq").toggleClass("preNavHeader");
     $("#buttonSeq").toggleClass("navHeader");
-    $("#project").children().toggleClass("hide");
     $("#section-container").toggleClass("hide");
     $("footer").toggleClass("hide");
     $("#overlay").toggleClass("active");

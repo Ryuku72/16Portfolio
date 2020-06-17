@@ -20,6 +20,13 @@ button:hover a {
     animation-name: letters;
 }
 
+
+a:hover p {
+    display: inline-flex;
+    animation: 0.8s;
+    animation-name: letters;
+}
+
 .slider:hover {
     background-color: rgba(118, 177, 126, 0.8);
 }

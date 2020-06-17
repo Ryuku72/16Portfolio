@@ -5,9 +5,6 @@ module.exports = function (app) {
   })
 
   app.get("/contact", function(req,res){
-    if (req.user) {
-      res.redirect("/members");
-    }
     res.render("contact")
   })
 
