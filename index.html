@@ -6,7 +6,8 @@
     <meta name="viewpoint" content="width-device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Permanent+Marker|Share+Tech+Mono|Schoolbell&display=swap"
+    rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>JKB || HOME</title>
@@ -44,21 +45,16 @@
         </header>
     </div>
     
-        <nav id="buttonSeq" class="preNavHeader w-full flex justify-start align-middle items-center z-20 subpixel-antialiased">
-            <a id="project" href="#week1" tabindex="1" class="pMarker w-64 ml-16 mx-6 hover:text-yellow-400"><p
-                    class="hide">//</p>Pr<p class="hide">o</p>j<p class="hide">ec</p>t<p class="hide">s</p></a>
-            <a id="about" tabindex="2" class="pMarker w-64 hover:text-purple-400 mx-6">ab<p class="hide">ou</p>t<p
-                    class="hide">//</p>m<p class="hide">e</p></a>
-            <a id="contact" tabindex="3" href="contact.html" class="pMarker w-64 hover:text-blue-500 mx-6">c<p class="hide">on</p>t<p
-                    class="hide">a</p>ct<p class="hide">//</p></a>
+        <nav id="buttonSeq" class="preNavHeader w-full pl-12 z-30 subpixel-antialiased">
+            <a id="project" tabindex="1" class="pMarker w-64 mx-3 hover:text-yellow-400">Projects<spam class="hide">//</spam></a>
+            <a id="about" tabindex="2" class="pMarker w-64 hover:text-purple-400 mx-3">about<spam class="hide">//</spam>me</a>
+            <a id="contact" tabindex="3" href="contact.html" class="pMarker w-64 hover:text-blue-500 mx-3">contact<spam class="hide">//</spam></a>
         </nav>
-    
+
         <div id="overlay" class="z-20 opacity-0 bg-gray-300 bg-opacity-50"></div>
     
-        <main id="section-container" class="absolute top-0 z-20 w-full text-center bg-transparent hide overflow-auto">
-    
-            <div id="slide1" data-slide="1"
-                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 imageShow slides overflow-hidden">
+        <main id="section-container" class="absolute top-0 z-20 w-full h-screen flex align-middle items-center text-center bg-transparent hide overflow-hidden">
+            <div id="slide1" data-slide="1" class="grid-cols-3 gap-3 grid-flow-row mx-4 w-full h-screen imageShow slides overflow-hidden" style="height: 80vh;">
     
                 <div id="week1" class="prjBox relative bg-cover row-span-2 w-full flex justify-center flex-col align-middle" style="clip-path: polygon(100% 56%, 90% 75%, 96% 90%, 65% 100%, 0 100%, 0 0, 100% 0); 
                 background-image: url(./public/img/week1.jpg)">
@@ -127,8 +123,8 @@
     
             </div>
             <div id="slide2" data-slide="2"
-                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
-    
+            class="grid-cols-3 gap-3 grid-flow-row mx-4 w-full h-screen carousel-inner imageHide slides overflow-hidden" style="height: 80vh;">
+            
                 <div id="week6" class="prjBox relative bg-cover row-span-2 w-full flex flex-col justify-center align-middle" style="clip-path: polygon(50% 0%, 100% 0, 100% 77%, 72% 100%, 49% 83%, 31% 100%, 15% 100%, 8% 100%, 0 100%, 0 0);
                 background-image: url(./public/img/week6.jpg)">
                  <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week6">&times;</a> 
@@ -215,7 +211,7 @@
     
             </div>
             <div id="slide3" data-slide="3"
-                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
+            class="grid-cols-3 gap-3 grid-flow-row mx-4 w-full h-screen carousel-inner imageHide slides overflow-hidden" style="height: 80vh;">
     
                 <div id="week12" class="prjBox relative bg-bcover w-full flex flex-col justify-center align-middle col-span-2" style="clip-path: polygon(100% 100%, 92% 88%, 85% 65%, 79% 89%, 71% 79%, 60% 100%, 0 100%, 0 0, 100% 0);
                 background-image: url(./public/img/week12.jpg)">
@@ -270,8 +266,7 @@
     
             </div>
             <div id="slide4" data-slide="4"
-                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
-                
+            class="grid-cols-3 gap-3 grid-flow-row mx-4 w-full h-screen carousel-inner imageHide slides overflow-hidden" style="height: 80vh;">
                 <div id="week16" class="prjBox relative bg-no-repeat bg-bottom w-full flex flex-col justify-center align-middle row-span-2" style="clip-path: polygon(100% 0, 100% 76%, 93% 100%, 0 100%, 0 29%, 0 0, 8% 0, 16% 12%, 26% 0); background-image: url(./public/img/week16.jpg);
                  background-size: 120% 130%">
                  <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week16">&times;</a> 
@@ -308,8 +303,7 @@
     
             </div>
             <div id="slide5" data-slide="5"
-                class="grid-cols-3 gap-3 grid-flow-row mx-4 h-screen pt-20 pb-16 carousel-inner imageHide slides">
-    
+            class="grid-cols-3 gap-3 grid-flow-row mx-4 w-full h-screen carousel-inner imageHide slides overflow-hidden" style="height: 80vh;">
                 <div id="week20" class="prjBox relative bg-center bg-auto w-full flex flex-col justify-center align-middle"
                     style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);background-image: url(./public/img/wip.jpg)">
                     <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex" data-week="week20">&times;</a> 
@@ -337,11 +331,11 @@
     
             </div>
     
-            <a id="leftBtn" class="absolute left-0 w-auto font-bold text-white text-4xl px-4 slider"
-                data-left="{{imageShow}}" style="top: 50%" href="#">&#10094;</a>
-            <a id="rightBtn" class="absolute right-0 w-auto font-bold text-white text-4xl px-4 slider"
-                data-rightt="{{imageShow}}" style="top: 50%" href="#">&#10095;</a>
-    
+            <a id="leftBtn" class="absolute left-0 w-auto flex justify-center align-middle font-bold text-white px-4 slider"
+                data-left="{{imageShow}}" style="font-size: 6vh;" href="#"><p>&#10094;</p></a>
+            <a id="rightBtn" class="absolute right-0 w-auto flex justify-center align-middle font-bold text-white px-4 slider"
+                data-rightt="{{imageShow}}" style="font-size: 6vh;" href="#"><p>&#10095;</p></a>
+            </div>
         </main>
         <footer class="hide absolute bottom-0 z-30 w-full h-12 bg-gray-800 flex justify-end align-middle items-center"
             style="clip-path: polygon(0 0, 9% 0, 26% 65%, 45% 0, 100% 0, 100% 32%, 100% 100%, 0 100%);">

@@ -53,6 +53,10 @@ html {
 }
 
 .preNavHeader {
+  display: flex;
+  justify-content: start;
+  vertical-align: middle;
+  align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -62,13 +66,15 @@ html {
 }
 
 .navHeader {
-  z-index: 30;
+  display: flex;
   position: absolute;
+  vertical-align: middle;
+  align-items: center;
   top: 0;
+  font-size: 2em;
   height: 8vh;
   background-color: rgb(45, 55, 72);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 92% 24%, 89% 77%, 82% 61%, 77% 100%, 0 100%);
-  font-size: 1.5em;
 }
 
 /* About Me Pop Up */

@@ -4,8 +4,8 @@
     transition: all 1s;
 } */
 
-#buttonSeq {
-    transition: all 0.5s ease;
+#section-container {
+    transition: all 0.5s ease-in-out
 }
 
 .slider {
@@ -21,14 +21,28 @@ button:hover a {
 }
 
 
-a:hover p {
+a:hover spam {
     display: inline-flex;
     animation: 0.8s;
     animation-name: letters;
 }
 
-.slider:hover {
-    background-color: rgba(118, 177, 126, 0.8);
+#leftBtn:hover {
+    background-color: rgba(130, 184, 143, 0.8);
+}
+
+#rightBtn:hover {
+    background-color: rgba(149, 118, 177, 0.8);
+}
+
+#leftBtn:hover p {
+    transition: 0.5s ease-in-out;
+    font-size: 8vh;
+}
+
+#rightBtn:hover p {
+    transition: 0.5s ease-in-out;
+    font-size: 8vh
 }
 
 .fa:hover {
