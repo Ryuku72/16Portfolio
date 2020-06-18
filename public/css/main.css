@@ -39,17 +39,22 @@ html {
 
 .fa-twitter {
   background: #55ACEE;
+}
+
+.fa {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
 .fa-linkedin {
   background: rgb(42, 106, 167);
-  color: white;
 }
 
 .fa-github-alt {
   background: rgb(27, 25, 55);
-  color: white;
 }
 
 #leftBtn p {
@@ -61,26 +66,14 @@ html {
 }
 
 .preNavHeader {
-  display: flex;
-  justify-content: start;
-  vertical-align: middle;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   font-size: 2.8em;
   padding-bottom: 1.2em;
   padding-left: 1em;
 }
 
 .navHeader {
-  display: flex;
-  position: absolute;
-  vertical-align: middle;
-  align-items: center;
-  top: 0;
-  font-size: 2em;
-  height: 8vh;
+  font-size: 1.5em;
+  height: 9vh;
   background-color: rgb(45, 55, 72);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 92% 24%, 89% 77%, 82% 61%, 77% 100%, 0 100%);
 }

@@ -1,22 +1,20 @@
 $(document).ready(function () {
 
-  $("#project").click(function () {
-    $("#buttonSeq").toggleClass("preNavHeader");
-    $("#buttonSeq").toggleClass("navHeader");
+  $(".project").click(function () {
+    $(".preNavHeader").toggleClass("hide");
     $("#section-container").toggleClass("hide");
-    $("footer").toggleClass("hide");
     $("#overlay").toggleClass("active");
   });
   
   $(".closeBtn").click(function(e){
-    event.stopPropagation()
+    e.stopPropagation()
     let weekID = $("#"+$(this).data("week")) 
     weekID.children(".closeBtn").toggleClass("hide")
     weekID.children(".wkTtl").toggleClass("hide")
     weekID.children(".prjInfo").toggleClass("hide")
   })
 
-  $("#about").click(function () {
+  $(".about").click(function () {
     $("#aboutPage").toggleClass("active");
     $("#overlay2").toggleClass("active");
     $("#popBtn").toggleClass("hide");
