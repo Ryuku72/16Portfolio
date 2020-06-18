@@ -52,6 +52,14 @@ html {
   color: white;
 }
 
+#leftBtn p {
+ text-shadow: purple 2px 5px;
+}
+
+#rightBtn p {
+  text-shadow: green 2px 5px;
+}
+
 .preNavHeader {
   display: flex;
   justify-content: start;
