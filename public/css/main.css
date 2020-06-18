@@ -39,9 +39,6 @@ html {
 
 .fa-twitter {
   background: #55ACEE;
-}
-
-.fa {
   display: flex;
   vertical-align: middle;
   align-items: center;
@@ -49,12 +46,26 @@ html {
   color: white;
 }
 
+.fa {
+  font-size: 1.2em;
+}
+
 .fa-linkedin {
   background: rgb(42, 106, 167);
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .fa-github-alt {
   background: rgb(27, 25, 55);
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 #leftBtn p {
