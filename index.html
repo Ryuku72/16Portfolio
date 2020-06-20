@@ -6,8 +6,7 @@
     <meta name="viewpoint" content="width-device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Permanent+Marker|Share+Tech+Mono|Schoolbell&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Permanent+Marker|Share+Tech+Mono|Schoolbell&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,13 +39,13 @@
                 <div id="titleSeq3" class="bg-pink-500 animation" style="z-index:2"></div>
                 <div id="titleSeq4" class="bg-blue-300 animation" style="z-index:1"></div>
                 <div id="moon" class="animation" style="z-index:6"></div>
-                <div id="house" style="z-index:7; position: absolute; bottom: 4%; right: 24%"></div>
-                <div id="smoke" style="z-index:6; position: absolute; bottom: 16%; right: 18.5%"></div>
+                <div id="house" style="z-index:7; position: fixed; bottom: 4%; right: 24%"></div>
+                <div id="smoke" style="z-index:6; position: fixed; bottom: 14%; right: 18.5%"></div>
             </div>
         </header>
     </div>
 
-    <nav class="preNavHeader flex justify-start align-middle items-center absolute left-0 bottom-0 w-full pl-12 z-10 subpixel-antialiased">
+    <nav class="preNavHeader flex justify-start align-middle items-center fixed left-0 bottom-0 w-full pl-12 z-10 subpixel-antialiased">
         <a tabindex="1" class="project pMarker w-64 mx-3 hover:text-yellow-400">Projects<spam class="hide">//</spam></a>
         <a tabindex="2" class="about pMarker w-64 hover:text-purple-400 mx-3">about<spam class="hide">//</spam>me</a>
         <a tabindex="3" href="contact.html" class="contact pMarker w-64 hover:text-blue-500 mx-3">contact<spam class="hide">//</spam></a>
@@ -55,7 +54,7 @@
     <div id="overlay" class="z-20 opacity-0 bg-gray-300 bg-opacity-50"></div>
 
     <main id="section-container"
-        class="absolute top-0 z-20 w-full h-full flex flex-col align-middle justify-center bg-transparent hide overflow-hidden">
+        class="fixed top-0 z-20 w-full h-full flex flex-col align-middle justify-center bg-transparent hide overflow-hidden">
         
         <nav class="navHeader flex align-middle justify-start items-center w-full z-30 mx-auto mb-auto mt-0 subpixel-antialiased">
             <a itabindex="1" class="project pMarker w-64 mx-3 ml-24 hover:text-yellow-400">Projects<spam class="hide">//</spam></a>
@@ -534,12 +533,12 @@
             </div>
 
             <a id="leftBtn"
-                class="absolute left-0 w-auto flex justify-center align-middle font-bold text-white px-4 slider shadow-2xl"
+                class="fixed left-0 w-auto flex justify-center align-middle font-bold text-white px-4 slider shadow-2xl"
                 data-left="{{imageShow}}" style="font-size: 6vh;" href="#">
                 <p>&#10094;</p>
             </a>
             <a id="rightBtn"
-                class="absolute right-0 w-auto flex justify-center align-middle font-bold text-white px-4 slider shadow-2xl"
+                class="fixed right-0 w-auto flex justify-center align-middle font-bold text-white px-4 slider shadow-2xl"
                 data-rightt="{{imageShow}}" style="font-size: 6vh;" href="#">
                 <p>&#10095;</p>
             </a>
