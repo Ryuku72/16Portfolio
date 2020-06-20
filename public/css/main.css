@@ -70,12 +70,14 @@ html {
   color: white;
 }
 
-#leftBtn p {
+#leftBtn {
  text-shadow: purple 2px 5px;
+ height: 8vh;
 }
 
-#rightBtn p {
+#rightBtn {
   text-shadow: green 2px 5px;
+  height: 8vh;
 }
 
 .navHeader {
@@ -185,8 +187,6 @@ html {
 }
 
 #house {
-  width: 4.5em;
-  height: 4.5em;
   background-color: rgb(147, 88, 0);
   clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
   -webkit-clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
