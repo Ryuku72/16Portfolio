@@ -21,18 +21,18 @@
     <div class="w-full h-screen relative z-0 bg-black">
         <!-- Slideshow container -->
 
-        <header id="navbar" class="h-full w-full subpixel-antialiased overflow-hidden">
+        <header id="navbar" class="h-full w-full flex subpixel-antialiased overflow-hidden">
 
             <!-- text -->
             <nav class="fixed top-0 flex flex-row flex-wrap-reverse z-10 w-full h-full pMarker subpixel-antialiased preNavHeader">
-                <ul class="w-full flex items-end ml-12 text-left leading-normal" style="font-size: 1.8em;">
-                    <li class="h-32 w-1/5 p-5 flex justify-start"><a tabindex="1" class="project hover:text-yellow-400">Projects<spam class="hide">//</spam></a></li>
-                    <li class="h-32 w-1/5 p-5 flex justify-start"><a tabindex="2" class="about hover:text-purple-400">about<spam class="hide">//</spam>me</a></li>
-                    <li class="h-32 w-1/5 p-5 flex justify-start"><a tabindex="3" class="contact hover:text-blue-500" href="contact.html">contact<spam class="hide">//</spam></a></li>
+                <ul class="w-3/5 flex items-end ml-12 text-left leading-normal text-4xl">
+                    <li class="xl:h-24 sm:h-40 flex justify-center w-64"><a tabindex="1" class="project hover:text-yellow-400">Projects<spam class="hide">//</spam></a></li>
+                    <li class="xl:h-24 sm:h-40 flex justify-center w-64"><a tabindex="2" class="about hover:text-purple-400">about<spam class="hide">//</spam>me</a></li>
+                    <li class="xl:h-24 sm:h-40 flex justify-center w-64"><a tabindex="3" class="contact hover:text-blue-500" href="contact.html">contact<spam class="hide">//</spam></a></li>
                 </ul>
-                <ul class="w-full flex flex-col p-10 items-end flex-wrap justify-center leading-none xl:text-3xl sm:text-base">
+                <ul class="w-full flex flex-col p-10 items-end flex-wrap justify-center leading-none xl:text-2xl sm:text-lg">
                     <li class="text-right" style="font-size: 3.5em;">HELLO. I AM</li>
-                    <li class="text-right w-2/3" style="font-size: 6.5em">JOSHUA K. // BADER</li>
+                    <li class="text-right w-3/4" style="font-size: 6.5em">Joshua K. Bader</li>
                 </ul>
             </nav>
 
@@ -41,8 +41,8 @@
             <div id="titleSeq3" class="bg-pink-500 animation" style="z-index:2"></div>
             <div id="titleSeq4" class="bg-blue-300 animation" style="z-index:1"></div>
             <div id="moon" class="animation" style="z-index:6"></div>
-            <div id="house" class="fixed bottom-0 xl:mr-64 xl:mb-6 sm:mr-40 sm:mb-4" style="z-index:7; right: 4.6em"></div>
-            <div id="smoke" class="fixed bottom-0 xl:mr-10 xl:mb-56 sm:mr-0 sm:mb-24" style="z-index:6; right: 4.6em"></div>
+            <div id="house" class="fixed bottom-0 xl:mr-48 xl:mb-6 sm:mr-40 sm:mb-12" style="z-index:7; right: 3em"></div>
+            <div id="smoke" class="fixed bottom-0 xl:mr-2 xl:mb-32 sm:mr-2 sm:mb-32" style="z-index:6; right:3em"></div>
         </header>
     </div>
 
@@ -51,17 +51,17 @@
     <main id="section-container"
         class="fixed top-0 z-20 w-full h-full flex flex-col align-middle justify-center bg-transparent hide overflow-hidden">
 
-        <nav class="navHeader flex align-middle justify-start items-center w-full z-30 mx-auto mb-auto mt-0 subpixel-antialiased text-4xl"
-            style="height: 9vh;">
-            <a itabindex="1" class="project pMarker w-64 mx-3 ml-24 hover:text-yellow-400">Projects<spam class="hide">//
+        <nav class="navHeader w-full z-30 flex flex-row mx-auto mb-auto mt-0 subpixel-antialiased text-4xl" style="height: 12vh;">
+
+            <a itabindex="1" class="project pMarker w-64 flex felx-col justify-end items-center hover:text-yellow-400">Projects<spam class="hide">//
                 </spam></a>
-            <a tabindex="2" class="about pMarker w-64 hover:text-purple-400 mx-3">about<spam class="hide">//</spam>
+            <a tabindex="2" class="about pMarker w-64 flex felx-col justify-end items-center hover:text-purple-400">about<spam class="hide">//</spam>
                 me</a>
-            <a tabindex="3" href="contact.html" class="contact pMarker w-64 hover:text-blue-500 mx-3">contact<spam
+            <a tabindex="3" href="contact.html" class="contact pMarker w-64 flex felx-col justify-end items-center hover:text-blue-500">contact<spam
                     class="hide">//</spam></a>
         </nav>
 
-        <div class="m-auto leading-10" style="height: 80vh; width: 95%">
+        <div class="m-auto leading-10" style="height: 72vh; width: 95%">
             <div id="slide1" data-slide="1"
                 class="grid-cols-3 gap-3 grid-flow-row w-full h-full imageShow slides overflow-hidden">
 
@@ -109,7 +109,7 @@
                     </div>
                 </div>
 
-                <div id="week3" class="prjBox relative bg-center w-full flex flex-col justify-center align-middle"
+                <div id="week3" class="prjBox relative bg-center bg-cover w-full flex flex-col justify-center align-middle"
                     style="clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 11% 76%, 0 53%, 0 0);
                 background-image: url(./public/img/week3.jpg)">
                     <a class="closeBtn absolute top-0 left-0 ml-6 mt-2 text-4xl hover:text-red-700 hide inline-flex"
@@ -353,7 +353,7 @@
                     </div>
                 </div>
 
-                <div id="week14" class="prjBox relative bg-bcover w-full flex flex-col justify-center align-middle"
+                <div id="week14" class="prjBox relative bg-center bg-bcover w-full flex flex-col justify-center align-middle"
                     style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);
                 background-image: url(./public/img/week14.jpg)">
                     <a class="closeBtn absolute top-0 right-0 mr-6 mt-3 text-4xl hover:text-red-700 hide inline-flex"
@@ -511,10 +511,11 @@
         </div>
 
         <a id="leftBtn" class="fixed left-0 flex flex-col justify-center align-middle text-center font-bold text-white slider shadow-2xl rounded-lg py-10 px-4" data-left="{{imageShow}}" style="font-size: 6vh; height: 10vh;" href="#">&#10094;</a>
+        
         <a id="rightBtn" class="fixed right-0 flex flex-col justify-center align-middle text-center font-bold text-white slider shadow-2xl rounded-lg py-10 px-4" data-rightt="{{imageShow}}" style="font-size: 6vh; height: 10vh;" href="#">&#10095;</a>
 
         <footer class="z-30 bg-gray-800 w-full flex inline-flex justify-end align-middle items-center text-center"
-            style="clip-path: polygon(0 0, 9% 0, 26% 65%, 45% 0, 100% 0, 100% 32%, 100% 100%, 0 100%); height: 8vh; margin: auto auto 0 auto;">
+            style="clip-path: polygon(0 0, 9% 0, 26% 65%, 45% 0, 100% 0, 100% 32%, 100% 100%, 0 100%); height: 12vh; margin: auto auto 0 auto;">
             <a class="fa fa-twitter mr-6 text-center h-8 w-12 rounded-lg" href="https://twitter.com/Ryuu7i"></a>
             <a class="fa fa-github-alt mr-6 text-center h-8 w-12 rounded-lg" href="https://github.com/Ryuku72"></a>
             <a class="fa fa-linkedin mr-10 text-center h-8 w-12 rounded-lg"

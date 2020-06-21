@@ -72,12 +72,10 @@ html {
 
 #leftBtn {
  text-shadow: purple 2px 5px;
- height: 8vh;
 }
 
 #rightBtn {
   text-shadow: green 2px 5px;
-  height: 8vh;
 }
 
 .navHeader {
