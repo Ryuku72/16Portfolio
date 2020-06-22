@@ -192,7 +192,8 @@ html {
   background-color: rgb(147, 88, 0);
   clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
   -webkit-clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
-  animation: house 10s, house-color 16s infinite;
+  animation: house 10s, house-color 16s infinite 0s;
+  -webkit-animation: house 10s, house-color 16s infinite 0s;
   opacity: 1;
   border-bottom: rgb(18, 52, 18) double 0.3em;
 }
@@ -203,7 +204,8 @@ html {
   background-color: grey;
   clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
   -webkit-clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
-  animation: smoke 16s infinite;
+  animation: smoke 16s infinite 0s;
+  -webkit-animation: smoke 16s infinite 0s;
   animation-delay: 7s;
   -webkit-animation-delay: 7s;
   opacity: 0;
