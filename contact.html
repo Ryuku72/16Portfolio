@@ -16,41 +16,38 @@
 
 <body>
 
-<div class="w-full h-screen flex justify-center align-middle items-center bg-cover bg-opacity-75" style="background-image: url(./public/img/coverbg.jpg)">
-<div class=" w-2/5">
-  <form name="contact" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 shadow-lg" method="POST" data-netlify="true">
+<div class="w-full h-screen flex justify-center align-middle items-center bg-cover bg-opacity-75 font-mono" style="background-image: url(./public/img/coverbg.jpg)">
+<div class=" w-3/4">
+  <form name="contact" class="bg-white shadow-md rounded p-12 mb-4 shadow-lg" method="POST" data-netlify="true">
     <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
           Name
         </label>
-        <input name="name" class="shadow appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Lorem Ipsum">
+        <input name="name" class="shadow appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 text-xl leading-tight focus:outline-none focus:shadow-outline" placeholder="Lorem Ipsum">
       </div>
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
         Email
       </label>
-      <input name="email" class="shadow appearance-none border  rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="hello@world.com">
+      <input name="email" class="shadow appearance-none border  rounded w-3/4 py-2 px-3 text-gray-700 text-xl leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="hello@world.com">
     </div>
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
         Message
       </label>
-      <textarea name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-2 leading-tight focus:outline-none focus:shadow-outline" rows="4">
-      </textarea>
+      <textarea name="message"class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-2 text-xl leading-tight focus:outline-none focus:shadow-outline" placeholder="Hello" rows="8"></textarea>
     </div>
     <div class="field mb-2">
-        <div data-netlify-recaptcha="true"></div>
+        <div class="m-4" data-netlify-recaptcha="true"></div>
     </div>
     <div class="flex items-center justify justify-end">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-        Send
-      </button>
-      <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mr-6 rounded focus:outline-none focus:shadow-outline" href="index.html">
-        Return
-      </a>
+      <a class="w-48 p-4 m-3 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded focus:outline-none focus:shadow-outline" type="submit">
+        Send</a>
+      <a class="w-48 p-4 m-3 bg-red-500 hover:bg-red-700 text-white font-bold rounded focus:outline-none focus:shadow-outline" href="index.html">
+        Return</a>
     </div>
   </form>
-  <p class="text-center text-gray-400 font-extrabold text-base">
+  <p class="text-center text-gray-300 font-extrabold text-base">
     JKB || Contact Page
   </p>
   </div>
