@@ -16,8 +16,8 @@
 
 <body>
 
-<div class="w-full h-screen flex justify-center align-middle items-center bg-cover bg-opacity-75 font-mono" style="background-image: url(./public/img/coverbg.jpg)">
-<div class=" w-3/4">
+<div class="w-full h-screen flex flex-col justify-center align-middle items-center bg-auto bg-opacity-75 font-mono" style="background-image: url(./public/img/coverbg.jpg)">
+<div class="w-3/4">
   <form name="contact" class="bg-white shadow-md rounded p-12 mb-4 shadow-lg" method="POST" data-netlify="true">
     <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
@@ -37,8 +37,8 @@
       </label>
       <textarea name="message"class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-2 text-xl leading-tight focus:outline-none focus:shadow-outline" placeholder="Hello" rows="8"></textarea>
     </div>
-    <div class="field mb-2">
-        <div class="m-4" data-netlify-recaptcha="true"></div>
+    <div class="field m-2">
+        <div data-netlify-recaptcha="true"></div>
     </div>
     <div class="flex items-center justify justify-end">
       <a class="w-48 p-4 m-3 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded focus:outline-none focus:shadow-outline" type="submit">
