@@ -45,11 +45,6 @@ a:hover spam {
     font-size: 8vh
 }
 
-.fa:hover {
-    opacity: 0.7;
-    background-color: orange;
-}
-
 /* Keyframes for front page  */
 @keyframes letters {
     0% {
