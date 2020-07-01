@@ -1,20 +1,22 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/HomeworkW16?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/HomeworkW16?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/HomeworkW16?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/16Portfolio?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/16Portfolio?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/16Portfolio?style=for-the-badge)
+<br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ebd5b957-fbc5-4ebf-ad1f-eedeb2a1e492/deploy-status)](https://app.netlify.com/sites/joshuakb/deploys)
 
-# HomeworkW16
-## Profile Update
-18th June 2020
-*****
+# Portfolio Update
+__PROJECT16: 18TH JUNE 2020__
+<br>
+https://joshuakb.netlify.app/
 
 ### Aim
 This week we turn back to our profile and attempt to update everything. Linkdin is looking good and so is the Github account.
 <br>
 
-### Working Project Example
-* Netlify App https://joshuakb.netlify.app/
-<br>
+## User Story
+AS A user, I want to be able see previous projects
+I WANT to be able to see numerous documents attached to those projects
+SO THAT I can assess how far the portfolio has come
 
 ## Key Concepts for HomeworkW10
 - Handlebars
