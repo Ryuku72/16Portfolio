@@ -30,7 +30,7 @@ html {
 
 .pMarker {
   font-family: 'Permanent Marker', cursive;
-  color: rgb(227, 227, 227);
+  color: white;
   text-shadow: black 5px 3px;
   outline: none !important;
 }
