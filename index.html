@@ -19,7 +19,7 @@
 <body class="h-screen w-screen"> 
 
     <div class="relative bg-black h-full w-full">
-        <!-- Slideshow container -->
+        <!-- Slides fadehow container -->
 
         <header id="navbar" class="h-full w-full bg-black flex subpixel-antialiased overflow-hidden">
 
@@ -61,7 +61,7 @@
         <nav class="navHeader w-full z-30 flex flex-row mx-auto mb-auto mt-0 subpixel-antialiased text-4xl"
             style="height: 12vh;">
 
-            <a itabindex="1"
+            <a tabindex="1"
                 class="project pMarker xl:w-64 sm:w-56 flex felx-col justify-end items-center hover:text-yellow-400">Home
                 <spam class="hide">//
                 </spam></a>
@@ -74,9 +74,9 @@
                 <spam class="hide">//</spam></a>
         </nav>
 
-        <div class="m-auto leading-10" style="height: 72vh; width: 95%">
+        <div id="carousel" class="m-auto leading-10" style="height: 72vh; width: 95%">
             <div id="slide1" data-slide="1"
-                class="grid-cols-3 gap-3 grid-flow-row w-full h-full imageShow slides overflow-hidden">
+                class="grid-cols-3 gap-3 grid-flow-row w-full h-full imageShow slides fade overflow-hidden">
 
                 <div id="week1"
                     class="prjBox cursor-pointer relative bg-center bg-cover row-span-2 w-full flex justify-center items-center flex-col align-middle"
@@ -187,7 +187,7 @@
             </div>
 
             <div id="slide2" data-slide="2"
-                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides">
+                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides fade">
 
 
                 <div id="week6"
@@ -331,7 +331,7 @@
 
             </div>
             <div id="slide3" data-slide="3"
-                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides">
+                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides fade">
 
                 <div id="week12"
                     class="prjBox cursor-pointer relative bg-bcover w-full flex flex-col justify-center align-middle col-span-2" style="clip-path: polygon(100% 100%, 92% 88%, 85% 65%, 79% 89%, 71% 79%, 60% 100%, 0 100%, 0 0, 100% 0);-webkit-clip-path:polygon(100% 100%, 92% 88%, 85% 65%, 79% 89%, 71% 79%, 60% 100%, 0 100%, 0 0, 100% 0);
@@ -418,7 +418,7 @@
 
             </div>
             <div id="slide4" data-slide="4"
-                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides">
+                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides fade">
                 <div id="week16"
                     class="prjBox cursor-pointer relative bg-no-repeat bg-bottom w-full flex flex-col justify-center align-middle row-span-2"
                     style="clip-path: polygon(100% 0, 100% 76%, 93% 100%, 0 100%, 0 29%, 0 0, 8% 0, 16% 12%, 26% 0); background-image: url(./public/img/week16.jpg);-webkit-clip-path:polygon(100% 0, 100% 76%, 93% 100%, 0 100%, 0 29%, 0 0, 8% 0, 16% 12%, 26% 0);
@@ -501,7 +501,7 @@
 
             </div>
             <div id="slide5" data-slide="5"
-                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides">
+                class="grid-cols-3 gap-3 grid-flow-row w-full h-full overflow-hidden carousel-inner imageHide slides fade">
                 <div id="week20"
                     class="prjBox cursor-pointer relative bg-center bg-auto w-full flex flex-col justify-center align-middle"
                     style="clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);-webkit-clip-path:polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0); background-image: url(./public/img/wip.jpg)">
@@ -551,15 +551,22 @@
 
         <a id="leftBtn"
             class="fixed left-0 flex flex-col justify-center align-middle items-center text-center font-bold text-white slider shadow-2xl rounded-lg xl:py-10 sm:py-20 px-4 xl:text-4xl sm:text-6xl"
-            data-left="{{imageShow}}" href="#">&#10094;</a>
+             href="#">&#10094;</a>
 
         <a id="rightBtn"
             class="fixed right-0 flex flex-col justify-center align-middle items-center text-center font-bold text-white slider shadow-2xl rounded-lg xl:py-10 sm:py-20 px-4 xl:text-4xl sm:text-6xl"
-            data-rightt="{{imageShow}}" href="#">&#10095;</a>
+         href="#">&#10095;</a>
 
         <footer class="z-30 bg-gray-800 w-full flex justify-end align-middle items-center text-center"
             style="clip-path: polygon(0 0, 9% 0, 26% 65%, 45% 0, 100% 0, 100% 32%, 100% 100%, 0 100%); height: 12vh; margin: auto auto 0 auto;">
-            <a class="fa fa-twitter hover:bg-red-600 mr-6 text-center h-8 w-12 rounded-lg"
+            <div style="text-align:center">
+                <span class="dot" id="dot1" data-dot="1" ></span>
+                <span class="dot" id="dot2" data-dot="2" ></span>
+                <span class="dot" id="dot3" data-dot="3" ></span>
+                <span class="dot" id="dot4" data-dot="4" ></span>
+                <span class="dot" id="dot5" data-dot="5" ></span>
+              </div>
+            <a class="fa fa-twitter hover:bg-red-600 mx-6 text-center h-8 w-12 rounded-lg"
                  target="_blank"  href="https://twitter.com/Ryuu7i"></a>
             <a class="fa fa-github-alt hover:bg-pink-600 mr-6 text-center h-8 w-12 rounded-lg"
                  target="_blank"  href="https://github.com/Ryuku72"></a>

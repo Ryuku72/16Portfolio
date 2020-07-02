@@ -45,6 +45,32 @@ a:hover spam {
     font-size: 8vh
 }
 
+.prjBox {
+    border: solid 0px #dd4170;
+    transition: border 0.3s linear;
+}
+
+.prjBox:hover { border-width: 8px; }
+
+/* Card animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
 /* Keyframes for front page  */
 @keyframes letters {
     0% {
