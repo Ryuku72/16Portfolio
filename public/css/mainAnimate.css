@@ -195,7 +195,7 @@ a:hover spam {
 @keyframes house {
     0% {
         opacity: 0%;
-        -webkit-filter: opacity(0.0);
+        -webkit-filter: opacity(0);
     }
 
     50% {
@@ -208,6 +208,21 @@ a:hover spam {
         -webkit-filter: opacity(1);
     }
 }
+
+@keyframes fadein {
+    0% {
+        height: 0em;
+    }
+    50% {
+        height: 0em;
+    }
+    75% {
+        height: 20em;
+    }
+    100% {
+        height: 28em;
+    }
+} 
 
 @keyframes house-color {
     0% {
